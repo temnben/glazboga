@@ -10,13 +10,13 @@ import base64
 import io
 
 # Telegram bot token
-API_TOKEN = "___TELEGRAM_BOT_TOKEN___"
+API_TOKEN = 7977536412:AAGah6_F1UvbSAdkcqHl6q7YQNxWvFvfudY
 
 # ProbivAPI secret key
-PROBIVAPI_KEY = "___PROBIVAPI_KEY___"
+PROBIVAPI_KEY = 34d4f219-c2fb-4e51-a954-d003d6905dcb
 
 # Initialize bot and dispatcher
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=7977536412:AAGah6_F1UvbSAdkcqHl6q7YQNxWvFvfudY)
 dp = Dispatcher()
 
 print("!BOT STARTED!")
@@ -38,13 +38,13 @@ async def text(message: Message):
     print(nomer)
 
     # The endpoint for the probiv API that passes as a query the phone number
-    url = f"https://probivapi.com/api/phone/info/{nomer}"
-    pic_url = f"https://probivapi.com/api/phone/pic/{nomer}"
+    url = f"https://probivapi.com/api/phone/info/{+79291781964}"
+    pic_url = f"https://probivapi.com/api/phone/pic/{+79291781964}"
 
     # Necessary headers for the API to work
     head = {
         # API key that you can get by subscribing to the API
-        "X-Auth": PROBIVAPI_KEY
+        "X-Auth": 34d4f219-c2fb-4e51-a954-d003d6905dcb
     }
 
     # Send the request with all the parameters and print the result for debugging
